@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cibertec.Models", "Cibertec.Models\Cibertec.Models.csproj", "{00B7C042-D694-4731-B338-17BD921532C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cibertec.Repositories", "Cibertec.Repositories\Cibertec.Repositories.csproj", "{0B8E5A46-5316-4206-9B51-9ECE7D3A7944}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cibertec.Repositories.EntityFrameworkTest", "Cibertec.RepositoriesTests\Cibertec.Repositories.EntityFrameworkTest.csproj", "{85E7EFF3-EDC1-400B-B42A-9451DEB21FC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{2C3B678F-A25D-46B1-8A60-9212817A3570}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{7FDA7316-2D13-4FE1-896E-E58C3B4C4DF3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cibertec.Repositories.EntityFramework", "Cibertec.Repositories.EntityFramework\Cibertec.Repositories.EntityFramework.csproj", "{35D691F2-6DDA-4D23-BE44-D68700D235C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cibertec.Repositories.Dapper", "Cibertec.Repositories.Dapper\Cibertec.Repositories.Dapper.csproj", "{232F459D-D2B7-4C4D-94EE-87B5FF7772D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cibertec.Repositories.DapperTest", "Cibertec.Repositories.DapperTest\Cibertec.Repositories.DapperTest.csproj", "{FDE787F3-F495-4709-961D-51644280A0CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cibertec.UnitOfWork", "Cibertec.UnitOfWork\Cibertec.UnitOfWork.csproj", "{557DFF50-5068-4D31-B6C2-EFD90780D6E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{6295DACE-3A55-4216-87B2-3343A8964D2F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cibertec.MVC", "Cibertec.MVC\Cibertec.MVC.csproj", "{1F6AD987-0119-46B3-B9A9-760662D8D9AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cibertec.WebApi", "Cibertec.WebApi\Cibertec.WebApi.csproj", "{5532DDCB-87F0-47FD-A364-0193F8AE5279}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cibertec.WebApiTest", "Cibertec.WebApiTest\Cibertec.WebApiTest.csproj", "{91A0E019-234A-49B4-9C14-73F94B315FD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00B7C042-D694-4731-B338-17BD921532C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00B7C042-D694-4731-B338-17BD921532C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00B7C042-D694-4731-B338-17BD921532C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00B7C042-D694-4731-B338-17BD921532C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B8E5A46-5316-4206-9B51-9ECE7D3A7944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B8E5A46-5316-4206-9B51-9ECE7D3A7944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B8E5A46-5316-4206-9B51-9ECE7D3A7944}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B8E5A46-5316-4206-9B51-9ECE7D3A7944}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85E7EFF3-EDC1-400B-B42A-9451DEB21FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85E7EFF3-EDC1-400B-B42A-9451DEB21FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85E7EFF3-EDC1-400B-B42A-9451DEB21FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85E7EFF3-EDC1-400B-B42A-9451DEB21FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35D691F2-6DDA-4D23-BE44-D68700D235C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35D691F2-6DDA-4D23-BE44-D68700D235C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35D691F2-6DDA-4D23-BE44-D68700D235C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35D691F2-6DDA-4D23-BE44-D68700D235C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{232F459D-D2B7-4C4D-94EE-87B5FF7772D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{232F459D-D2B7-4C4D-94EE-87B5FF7772D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{232F459D-D2B7-4C4D-94EE-87B5FF7772D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{232F459D-D2B7-4C4D-94EE-87B5FF7772D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDE787F3-F495-4709-961D-51644280A0CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDE787F3-F495-4709-961D-51644280A0CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDE787F3-F495-4709-961D-51644280A0CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDE787F3-F495-4709-961D-51644280A0CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{557DFF50-5068-4D31-B6C2-EFD90780D6E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{557DFF50-5068-4D31-B6C2-EFD90780D6E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{557DFF50-5068-4D31-B6C2-EFD90780D6E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{557DFF50-5068-4D31-B6C2-EFD90780D6E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F6AD987-0119-46B3-B9A9-760662D8D9AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F6AD987-0119-46B3-B9A9-760662D8D9AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F6AD987-0119-46B3-B9A9-760662D8D9AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F6AD987-0119-46B3-B9A9-760662D8D9AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5532DDCB-87F0-47FD-A364-0193F8AE5279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5532DDCB-87F0-47FD-A364-0193F8AE5279}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5532DDCB-87F0-47FD-A364-0193F8AE5279}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5532DDCB-87F0-47FD-A364-0193F8AE5279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91A0E019-234A-49B4-9C14-73F94B315FD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91A0E019-234A-49B4-9C14-73F94B315FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91A0E019-234A-49B4-9C14-73F94B315FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91A0E019-234A-49B4-9C14-73F94B315FD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{00B7C042-D694-4731-B338-17BD921532C3} = {7FDA7316-2D13-4FE1-896E-E58C3B4C4DF3}
+		{0B8E5A46-5316-4206-9B51-9ECE7D3A7944} = {7FDA7316-2D13-4FE1-896E-E58C3B4C4DF3}
+		{85E7EFF3-EDC1-400B-B42A-9451DEB21FC4} = {2C3B678F-A25D-46B1-8A60-9212817A3570}
+		{35D691F2-6DDA-4D23-BE44-D68700D235C0} = {7FDA7316-2D13-4FE1-896E-E58C3B4C4DF3}
+		{232F459D-D2B7-4C4D-94EE-87B5FF7772D5} = {7FDA7316-2D13-4FE1-896E-E58C3B4C4DF3}
+		{FDE787F3-F495-4709-961D-51644280A0CF} = {2C3B678F-A25D-46B1-8A60-9212817A3570}
+		{557DFF50-5068-4D31-B6C2-EFD90780D6E8} = {7FDA7316-2D13-4FE1-896E-E58C3B4C4DF3}
+		{1F6AD987-0119-46B3-B9A9-760662D8D9AA} = {6295DACE-3A55-4216-87B2-3343A8964D2F}
+		{5532DDCB-87F0-47FD-A364-0193F8AE5279} = {6295DACE-3A55-4216-87B2-3343A8964D2F}
+		{91A0E019-234A-49B4-9C14-73F94B315FD9} = {2C3B678F-A25D-46B1-8A60-9212817A3570}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA846BAC-8AC7-454E-B999-B090DFE2217E}
+	EndGlobalSection
+EndGlobal
