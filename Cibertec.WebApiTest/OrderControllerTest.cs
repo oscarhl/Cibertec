@@ -9,22 +9,23 @@ using Xunit;
 
 namespace Cibertec.WebApiTest
 {
-    public class CustomerControllerTests
+    public class OrderControllerTest
     {
-        private CustomerController _customerController;
+        private OrderController _orderController;
 
-        public CustomerControllerTests()
+        public OrderControllerTest()
         {
-            _customerController = new CustomerController(
+            _orderController = new OrderController(
                 new NorthwindUniOftWork(ConfigSettings.NorthwindConnectionString)
                 );
 
         }
-        
+
+
         [Fact]
         public void Test_Get_All()
         {
-            var result = _customerController.GetList() as OkObjectResult;
+            var result = _orderController.GetList() as OkObjectResult;
 
             Assert.True(result != null);
             Assert.True(result.Value != null);
@@ -36,20 +37,13 @@ namespace Cibertec.WebApiTest
         [Fact]
         public void Test_Get_All_FluentAssertions()
         {
-            var result = _customerController.GetList() as OkObjectResult;
+            var result = _orderController.GetList() as OkObjectResult;
 
             result.Should().NotBeNull();
             result.Value.Should().NotBeNull();
 
             var model = result.Value as List<Customer>;
             model.Count.Should().BeGreaterThan(0);
-        }
-
-        public void Test_Get_By_Id()
-        {
-            var result = _customerController.GetById(10) as OkObjectResult;
-            result.Should().NotBeNull();
-            result.Value.Should().NotBeNull();
         }
     }
 }
