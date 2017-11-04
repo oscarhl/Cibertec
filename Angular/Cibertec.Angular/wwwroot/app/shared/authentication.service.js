@@ -15,7 +15,7 @@
 
         function login(user) {
             var url = configService.getApiUrl() + '/Token';
-            var data = "username=" + user.username + "&password=" +
+            var data = "username=" + user.userName + "&password=" +
                 user.password;
 
             $http.post(url, data, {
@@ -29,7 +29,7 @@
                     localStorageService.set('userToken',
                         {
                             token: result.data.access_token,
-                            username: user.username
+                            username: user.userName
                         });
                     configService.setLogin(true);
                     $state.go("home");

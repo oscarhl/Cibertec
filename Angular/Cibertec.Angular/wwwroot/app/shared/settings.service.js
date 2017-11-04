@@ -1,9 +1,9 @@
 ﻿(function () {
     'use strict';
 
-    angular.module('app').factory('ConfigService', ConfigService)
+    angular.module('app').factory('configService', configService)
 
-    function ConfigService() {
+    function configService() {
         var service = {};
 
         var apiUrl = undefined;
@@ -15,7 +15,7 @@
 
         return service;
 
-        function setLogin() {
+        function setLogin(state) {
             isLogged = state;
         }
 
@@ -27,8 +27,8 @@
             return apiUrl;
         }
 
-        function setApiUrl() {
-            apiUrl = Url;
+        function setApiUrl(url) {
+            apiUrl = url;
         }
 
         

@@ -12,7 +12,7 @@
 
         return service;
 
-        function getData() {
+        function getData(url) {
             return $http.get(url);
         }
 

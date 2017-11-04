@@ -10,12 +10,12 @@
             <strong>Error!</strong>
         </div>
     </div>
-    <form id="loginModel" ng-submit="vm.login" class="form-horizontal">
+    <form id="loginModel" ng-submit="vm.login()" class="form-horizontal">
         <div class="form-group">
             <label for="userName" class="control-label col-sm-2">Usuario:</label>
             <div class="col-sm-4">
                 <input id="userName" type="text" class="form-control"
-                       ng-model="vm.user.username"/><br/>
+                       ng-model="vm.user.userName"/><br/>
 
             </div>
         </div>
