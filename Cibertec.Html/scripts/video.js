@@ -1,4 +1,4 @@
-﻿(function (cibertec)){
+﻿(function (cibertec){
     cibertec.video = {
         videoElement: document.getElementById("video"),
         play: function () {
