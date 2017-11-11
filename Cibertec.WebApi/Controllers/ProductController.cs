@@ -18,9 +18,12 @@ namespace Cibertec.WebApi.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetList()
+        [Route("list/{page}/{rows}")]
+        public IActionResult GetList(int page, int rows)
         {
-            return Ok(_unit.Products.GetList());
+            var startRecord = ((page - 1) * rows) + 1;
+            var endRecord = page * rows;
+            return Ok(_unit.Products.PagedList(startRecord, endRecord));
         }
 
         [HttpGet]
@@ -69,14 +72,7 @@ namespace Cibertec.WebApi.Controllers
         {
             return Ok(_unit.Products.Count());
         }
-        [HttpGet]
-        [Route("list/{page}/{rows}")]
-        public IActionResult GetList(int page, int rows)
-        {
-            var startRecord = ((page - 1) * rows) + 1;
-            var endRecord = page * rows;
-            return Ok(_unit.Products.PagedList(startRecord, endRecord));
-        }
+       
 
     }
 }

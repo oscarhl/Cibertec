@@ -27,8 +27,7 @@
         vm.edit = edit;
         vm.delete = productDelete;
         vm.pageChanged = pageChanged;
-        vm.closeModal = closeModal;
-        Cibertec Perú S.A.C - Visual Studio 2015 Web Developer Advanced – C# 8
+        vm.closeModal = closeModal;       
         init();
         function init() {
             if (!configService.getLogin()) return $state.go('login');
@@ -151,4 +150,4 @@
             angular.element('#modal-container').modal('hide');
         }
     }
-})();
+})();
