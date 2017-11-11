@@ -52,11 +52,12 @@ namespace Cibertec.WebApi.Controllers
         }
 
         [HttpDelete]
-        public IActionResult Delete([FromBody] Customer customer)
+        [Route("{id}")]
+        public IActionResult Delete(int? id)
         {
-            if (customer.Id>0)
+            if(id.HasValue && id.Value>0)
             {
-                return Ok(_unit.Customers.Delete(customer));
+                return Ok(_unit.Customers.Delete(new Customer { Id=id.Value}));
             }
             return BadRequest(new { Message="Incorrect data"});
 

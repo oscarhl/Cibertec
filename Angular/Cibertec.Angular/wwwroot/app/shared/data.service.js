@@ -16,16 +16,16 @@
             return $http.get(url);
         }
 
-        function postData() {
+        function postData(url,data) {
             return $http.post(url,data);
         }
 
-        function putData() {
+        function putData(url,data) {
             return $http.put(url,data);
         }
 
-        function deleteData() {
-            return $http.delete(url,data);
+        function deleteData(url) {
+            return $http.delete(url);
         }
     }
 
