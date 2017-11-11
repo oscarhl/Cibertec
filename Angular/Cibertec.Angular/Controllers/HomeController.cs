@@ -15,7 +15,7 @@ namespace Cibertec.Angular.Controllers
 
         public IActionResult Index()
         {
-            ViewBag.WepApiUrl = _config.WebApiUrl;
+            ViewBag.WebApiUrl = _config.WebApiUrl;
             return View();
         }
 

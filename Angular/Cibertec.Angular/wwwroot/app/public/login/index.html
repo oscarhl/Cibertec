@@ -1,21 +1,15 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
-    <div ng-controller="loginController as vm">
-        <div ng-if="vm.showError" class="alert alert-danger">
-            <strong>Error!</strong>
-        </div>
+﻿
+<div ng-controller="loginController as vm">
+    <div ng-if="vm.showError" class="alert alert-danger">
+        <strong>Error!</strong>
     </div>
+
     <form id="loginModel" ng-submit="vm.login()" class="form-horizontal">
         <div class="form-group">
             <label for="userName" class="control-label col-sm-2">Usuario:</label>
             <div class="col-sm-4">
-                <input id="userName" type="text" class="form-control"
-                       ng-model="vm.user.userName"/><br/>
+                <input id="email" type="text" class="form-control"
+                       ng-model="vm.user.email" /><br />
 
             </div>
         </div>
@@ -23,7 +17,7 @@
             <label for="password" class="control-label col-sm-2">Contraseña:</label>
             <div class="col-sm-4">
                 <input id="password" type="password" class="form-control"
-                       ng-model="vm.user.password"/><br/>
+                       ng-model="vm.user.password" /><br />
             </div>
         </div>
         <div class="col-sm-.offset-2 col-sm-10">
@@ -32,5 +26,5 @@
 
     </form>
 
-</body>
-</html>
+</div>
+

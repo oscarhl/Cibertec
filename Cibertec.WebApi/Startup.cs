@@ -72,6 +72,8 @@ namespace Cibertec.WebApi
                 .Build();
             });
 
+            services.AddCors();
+
 
         }
 
@@ -85,6 +87,11 @@ namespace Cibertec.WebApi
 
             app.UseResponseCompression();
             app.UseAuthentication();
+
+            app.UseCors(option =>
+            {
+                option.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
+            });
 
             app.UseMvc();
         }
