@@ -33,6 +33,7 @@
                            href="#" ui-sref-active="active">Logout</a>
                     </li>
                     <li><a ng-if="vm.validate()" ui-sref="product" ui-srefactive="active">Product</a></li>
+                    <li><a ng-if="vm.validate()" ui-sref="customer" ui-srefactive="active">Customer</a></li>
 
                 </ul>
             </div>
@@ -71,6 +72,10 @@
         <script src="~/app/private/product/directives/productcard/product.card.js"></script>
         <script src="~/app/private/product/directives/productform/product.form.js"></script>
         <script src="~/app/private/product/product.controller.js"></script>
+
+        <script src="~/app/private/customer/directives/customercard/customer.card.js"></script>
+        <script src="~/app/private/customer/directives/customerform/customer.form.js"></script>
+        <script src="~/app/private/customer/customer.controller.js"></script>
 
     </environment>
 </body>
