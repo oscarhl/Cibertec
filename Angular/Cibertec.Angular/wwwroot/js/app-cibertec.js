@@ -709,6 +709,7 @@
         vm.user = {};
         vm.title = 'login';
         vm.login = login;
+        vm.showError = false;
 
         init();
 
@@ -719,7 +720,12 @@
         }
 
         function login() {
-            authenticationService.login(vm.user);
+            authenticationService.login(vm.user).then(function (result) {
+                vm.showError = false;
+                $state.go("home");
+            }, function (error) {
+                vm.showError = true;
+            });
         }
     }
 
